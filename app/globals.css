@@ -2,20 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .navbar {
+    @apply w-full h-[90px] border-[#0060de] border-b-4  border-t border-l-0 border-r-0
+  }
+
+  .mobileNav {
+    @apply text-white text-[22px] hover:bg-white hover:text-black hover:px-5 hover:w-full
+  }
 }
