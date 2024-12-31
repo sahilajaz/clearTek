@@ -9,7 +9,7 @@ import {
     SheetTrigger,
   } from "@/components/ui/sheet"
 import Image from 'next/image'
-import { navItems } from '@/app/constants'
+import { navItems } from '@/constants'
 import Link from 'next/link'
   
 const MobileNavbar = () => {
