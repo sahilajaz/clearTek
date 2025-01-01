@@ -27,7 +27,7 @@ import { GrNext } from "react-icons/gr";
         setActiveIndex((prevIndex) =>
           prevIndex === carouselPic.length - 1 ? 0 : prevIndex + 1
         );
-      }, 4000)
+      }, 7000)
 
        return () => clearInterval(interval)
      })
