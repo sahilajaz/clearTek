@@ -14,4 +14,8 @@ body {
   .mobileNav {
     @apply text-white text-[22px] hover:bg-white hover:text-black hover:px-5 hover:w-full
   }
+
+  .carouselText {
+     @apply text-[0.8rem] sm:text-xl md:text-3xl z-20 top-16 sm:top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center
+  }
 }

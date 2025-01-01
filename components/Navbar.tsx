@@ -12,7 +12,7 @@ const Navbar = () => {
       <ul className="hidden sm:flex gap-5">
         {
           navItems.map((item) => (
-            <Link key={item.id} href={item.path} className="text-[#0060de] text-[20px] hover:text-gray-700">{item.name}</Link>
+            <Link key={item.id} href={item.path} className="text-[#0060de] text-[18px] hover:text-gray-700">{item.name}</Link>
           ))
         }
       </ul>

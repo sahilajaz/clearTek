@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${raleway.variable} ${raleway.variable} antialiased`}
+        className={`${raleway.variable} ${raleway.variable} antialiased overflow-hidden`}
       >
         <Navbar/>
         {children}

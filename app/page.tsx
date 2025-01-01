@@ -1,4 +1,4 @@
-
+import Mycarousel from "@/components/Mycarousel";
 
 
 
@@ -6,8 +6,8 @@ export default function Home() {
    
 
   return (
-    <section className="w-full h-screen">
-    
+    <section>
+       <Mycarousel/>
     </section>
   )
 }
