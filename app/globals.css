@@ -47,5 +47,8 @@ body {
   .card8 {
     @apply bg-gradient-to-b from-[#ae9cff] to-[#8f78fc];
   }
-      
+     
+  .inputFiled {
+    @apply text-white border-b border-white border-t-0 bg-transparent outline-none placeholder-white
+  }
 }
