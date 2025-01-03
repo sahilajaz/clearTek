@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="mt-16">
       <section className="form-section   mx-5 sm:mx-20 2xl:mx-[700px]">
-        <div className='bg-[url("/formimg.png")] w-[550px] sm:w-full 2xl:w-[1600px] h-[610px]'>
+        <div className='bg-[url("/formimg.png")] w-[400px] sm:w-full 2xl:w-[1600px] h-[610px]'>
           <div className="w-full h-full flex flex-col sm:pl-[100px] md:pl-[400px]  lg:pl-[600px] pt-32 sm:pt-52 md:pt-20 lg:pt-32  gap-10">
             <h1 className="text-white font-semibold text-sm lg:text-4xl mx-5 md:mx-2 lg:mx-5">
               Get In Touch With Us!
@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-            <section className="w-[550px] sm:w-full mt-10 border-t-2 border-b-2">
+            <section className="w-[450px] sm:w-full mt-10 border-t-2 border-b-2">
         <div className="grid grid-col-1 sm:grid-col-2 md:grid-col-3 lg:grid-cols-4 gap-10 py-16 px-32 sm:px-16">
           {/* Column 1: Social Media */}
           <div className="social-media flex flex-col gap-5">
@@ -130,12 +130,12 @@ const Footer = () => {
             <div className="mt-10 w-full flex mx-10 sm:mx-0 flex-col gap-y-4">
               <p className="flex gap-2 items-center cursor-pointer">
                 <Image src="/phone.png" alt="phone" width={10} height={10} />
-                <span className="text-sm cursor-default">607 783 1166</span>
+                <span className="text-sm cursor-default">(123) 456-7890</span>
               </p>
               <Separator className="w-[120%] bg-black/20 ml-auto mt-2" />
               <p className="flex gap-2 items-center cursor-pointer">
                 <Image src="/email.png" alt="email" width={10} height={10} />
-                <span className="text-sm cursor-default whitespace-nowrap">info@saphyrecloud.com</span>
+                <span className="text-sm cursor-default whitespace-nowrap">info@clearteksystems.com</span>
               </p>
               <Separator className="w-[120%] bg-black/20 ml-auto mt-2" />
               <p className="flex gap-2 items-center cursor-pointer">
@@ -148,7 +148,7 @@ const Footer = () => {
         </div>
       </section>
 
-          <p className="w-full ml-32 sm:ml-0 sm:text-center py-4 tex-sm sm:text-1xl"><span className="font-extralight">Copyright &copy;2024 by</span> <strong>Saphyre Cloud.</strong></p>
+          <p className="w-full ml-32 sm:ml-0 sm:text-center py-4 tex-sm sm:text-1xl"><span className="font-extralight">Copyright &copy;2025 by</span> <strong>ClearTek Systems</strong></p>
         </footer>
   )
 }

@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply  min-h-screen;
+  }
 }
 
 @layer utilities {
