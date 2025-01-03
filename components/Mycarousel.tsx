@@ -67,7 +67,7 @@ import { GrNext } from "react-icons/gr";
         </button>
         <button
           onClick={handleNext}
-          className="absolute top-[300px] sm:top-[320px] right-10 z-20 text-white text-3xl"
+          className="absolute top-[300px] sm:top-[320px] right-[-40px] sm:right-10 z-20 text-white text-3xl"
           aria-label="Next Slide"
         >
           <GrNext />

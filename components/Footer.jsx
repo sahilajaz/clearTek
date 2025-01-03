@@ -8,8 +8,6 @@ import { Separator } from "@/components/ui/separator"
 
 
 const Footer = () => {
-  
- 
   return (
     <footer className="mt-16">
       <section className="form-section   mx-5 sm:mx-20 2xl:mx-[700px]">

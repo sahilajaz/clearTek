@@ -15,13 +15,13 @@ import Link from 'next/link'
 const MobileNavbar = () => {
 
   return (
-    <div className='w-ful'>
+    <div className='w-full'>
       <Sheet>
       <SheetTrigger className='w-full'> 
       <Image src='/menu.svg' alt="menu-icon" width={24} height={14} className=''/>
       </SheetTrigger>
       <SheetTitle>{''}</SheetTitle>
-      <SheetContent className='h-screen bg-[#0060de]'>
+      <SheetContent className='h-[3000px] bg-[#0060de]'>
         <SheetClose
             className="absolute top-4 right-4  text-white outline-none font-xl"
           >
