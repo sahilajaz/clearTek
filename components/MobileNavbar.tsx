@@ -15,10 +15,10 @@ import Link from 'next/link'
 const MobileNavbar = () => {
 
   return (
-    <div >
+    <div className='w-ful'>
       <Sheet>
-      <SheetTrigger > 
-      <Image src='/menu.svg' alt="menu-icon" width={24} height={14}/>
+      <SheetTrigger className='w-full'> 
+      <Image src='/menu.svg' alt="menu-icon" width={24} height={14} className=''/>
       </SheetTrigger>
       <SheetTitle>{''}</SheetTitle>
       <SheetContent className='h-screen bg-[#0060de]'>

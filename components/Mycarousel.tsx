@@ -38,7 +38,7 @@ import { GrNext } from "react-icons/gr";
           {carouselPic.map((item, index) => (
             <div
               key={item.id}
-              className={`absolute transition-opacity duration-700 ease-in-out w-[100%] sm:w-[100%] h-[100%] ${
+              className={`absolute transition-opacity duration-700 ease-in-out w-[600px] sm:w-[100%] 2xl:w-[3500px] h-[100%] ${
                 index === activeIndex ? 'opacity-100' : 'opacity-0'
               }`}
              
