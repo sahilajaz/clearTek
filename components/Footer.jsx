@@ -30,8 +30,8 @@ const Footer = () => {
           </div>
         </div>
       </section>
-            <section className="w-[450px] sm:w-full mt-10 border-t-2 border-b-2">
-        <div className="grid grid-col-1 sm:grid-col-2 md:grid-col-3 lg:grid-cols-4 gap-10 py-16 px-32 sm:px-16">
+            <section className="w-full mt-10 border-t-2 border-b-2">
+        <div className="grid grid-col-1 sm:grid-col-2 md:grid-col-3 lg:grid-cols-4 gap-10 py-16  sm:px-16">
           {/* Column 1: Social Media */}
           <div className="social-media flex flex-col gap-5">
             <Image src="/logo.png" alt="pic" width={200} height={200} />
@@ -51,8 +51,8 @@ const Footer = () => {
 
           {/* Column 2 and 3: Explore Section */}
           <div className="col-span-2">
-            <h1 className="text-3xl font-thin">Explore</h1>
-            <div className="w-full grid grid-col-1 sm:grid-cols-2 gap-10 mt-6">
+            <h1 className=" text-3xl font-thin">Explore</h1>
+            <div className="w-1/2 sm:w-full grid grid-col-1 sm:grid-cols-2 gap-10 mt-6">
               {/* Column 2 Left */}
               <div className="mt-5 flex flex-col gap-3">
                 <p className="flex gap-4 sm:gap-2 items-center cursor-pointer">
@@ -148,7 +148,7 @@ const Footer = () => {
         </div>
       </section>
 
-          <p className="w-full ml-32 sm:ml-0 sm:text-center py-4 tex-sm sm:text-1xl"><span className="font-extralight">Copyright &copy;2025 by</span> <strong>ClearTek Systems</strong></p>
+          <p className="w-full  sm:text-center py-4 text-sm sm:text-1xl"><span className="font-extralight">Copyright &copy;2025 by</span> <strong>ClearTek Systems</strong></p>
         </footer>
   )
 }

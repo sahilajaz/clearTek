@@ -18,14 +18,14 @@ const MobileNavbar = () => {
     <div className='w-full'>
       <Sheet>
       <SheetTrigger className='w-full'> 
-      <Image src='/menu.svg' alt="menu-icon" width={24} height={14} className=''/>
+      <Image src='/menu.svg' alt="menu-icon" width={24} height={14} />
       </SheetTrigger>
       <SheetTitle>{''}</SheetTitle>
-      <SheetContent className='h-[3000px] bg-[#0060de]'>
+      <SheetContent className='h-screen bg-[#0060de]'>
         <SheetClose
-            className="absolute top-4 right-4  text-white outline-none font-xl"
+            className="absolute top-11 right-44  text-white outline-none font-xl"
           >
-            ✕
+            ✕ 
           </SheetClose>
          <ul className="flex flex-col mt-24 gap-6 w-full">
               {
