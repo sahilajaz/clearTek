@@ -7,13 +7,13 @@ import Link from 'next/link'
 
 const ServiceCard = () => {
   return (
-    <div className='grid grid-cols-1  sm:grid-cols-2  xl:grid-cols-4 gap-10 sm:gap-60 md:gap-20 mt-10 ml-10 sm:ml-0'>
+    <div className='grid grid-cols-1  sm:grid-cols-2  xl:grid-cols-4 gap-10 sm:gap-60 md:gap-20 mt-10 ml-1 sm:ml-0 '>
       {
         ServicecardsArr.map((item) => (
           <div 
           key={item.id} 
           className={cn(
-            'flex flex-1 flex-col justify-center items-center py-5 gap-1 px-5 border border-gray-300 rounded-2xl shadow-2xl w-[250px] md:w-[330px] cursor-pointer  transform transition-all duration-300 hover:scale-105', 
+            'flex flex-1 flex-col justify-center items-center py-5 gap-1 px-5 border border-gray-300 rounded-2xl shadow-2xl w-[210px] md:w-[330px] cursor-pointer  transform transition-all duration-300 hover:scale-105', 
             {
               'card1': item.id === 1, 
               'card2': item.id === 2,

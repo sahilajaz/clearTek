@@ -21,12 +21,7 @@ const MobileNavbar = () => {
       <Image src='/menu.svg' alt="menu-icon" width={24} height={14} />
       </SheetTrigger>
       <SheetTitle>{''}</SheetTitle>
-      <SheetContent className='h-[2000px] bg-[#0060de]'>
-        <SheetClose
-            className="absolute  right-80  text-white outline-none font-xl"
-          >
-            ✕ 
-          </SheetClose>
+      <SheetContent className='h-screen bg-[#0060de]'>
          <ul className="flex flex-col mt-24 gap-6 w-full">
               {
                 navItems.map((item) => (
