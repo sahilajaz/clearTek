@@ -10,13 +10,13 @@ import { Separator } from "@/components/ui/separator"
 const Footer = () => {
   return (
     <footer className="w-full mt-16">
-      <section className="form-section">
-        <div className='bg-[url("/formimg.png")] w-full h-[610px]'>
-          <div className="w-full h-full flex flex-col sm:pl-[100px] md:pl-[400px]  lg:pl-[600px] pt-32 sm:pt-52 md:pt-20 lg:pt-32  gap-10">
+      <section className="form-section  lg:mx-28">
+        <div className='bg-[url("/formimg.png")] w-[700px] lg:min-w-[80%] xl:w-[200px] h-[610px]'>
+          <div className="w-full h-full flex flex-col sm:pl-[100px] lg:pl-[600px] pt-20 sm:pt-28 md:pt-20 lg:pt-32  gap-10">
             <h1 className="text-white font-semibold text-sm lg:text-4xl mx-5 md:mx-2 lg:mx-5">
               Get In Touch With Us!
             </h1>
-             <form className="grid grid-cols-2 gap-9 md:gap-6 lg:gap-8 w-full px-4 lg:px-5">
+             <form className="grid grid-cols-2 gap-9 md:gap-6 lg:gap-8 w-[250px] sm:w-full px-4 lg:px-5">
               <input className="inputFiled md:w-full lg:w-full py-3 px-1" placeholder="First Name"/>
               <input className="inputFiled w-full py-3 px-1" placeholder="Last Name"/>
               <input className="inputFiled w-full py-3 px-1" placeholder="Your Email"/>
