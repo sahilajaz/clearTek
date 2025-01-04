@@ -10,8 +10,8 @@ import { Separator } from "@/components/ui/separator"
 const Footer = () => {
   return (
     <footer className="w-full mt-16">
-      <section className="form-section  lg:mx-28">
-        <div className='bg-[url("/formimg.png")] w-[700px] lg:min-w-[80%] xl:w-[200px] h-[610px]'>
+      <section className="form-section md:mx-10  lg:mx-28 2xl:mx-[900px]">
+        <div className='bg-[url("/formimg.png")] w-[700px] lg:min-w-[100%]  h-[610px]'>
           <div className="w-full h-full flex flex-col sm:pl-[100px] lg:pl-[600px] pt-20 sm:pt-28 md:pt-20 lg:pt-32  gap-10">
             <h1 className="text-white font-semibold text-sm lg:text-4xl mx-5 md:mx-2 lg:mx-5">
               Get In Touch With Us!
@@ -25,13 +25,13 @@ const Footer = () => {
                 className="inputFiled w-full py-3 px-1 col-span-2"
                 placeholder="Your Message"
               />
-              <Button type="submit" className="w-1/3 bg-[#0d3e82] px-[20px] py-[10px] rounded-sm sm:px-[9px] sm:py-[17px] sm:rounded-xl">Send</Button>
+              <Button type="submit" className="w-ful sm:w-1/3 bg-[#0d3e82] px-[20px] py-[10px] rounded-sm sm:px-[9px] sm:py-[17px] sm:rounded-xl">Send</Button>
              </form>
           </div>
         </div>
       </section>
             <section className="w-full mt-10 border-t-2 border-b-2">
-        <div className="grid grid-col-1 sm:grid-col-2 md:grid-col-3 lg:grid-cols-4 gap-10 py-16  sm:px-16">
+        <div className="grid grid-col-1 sm:grid-col-2 md:grid-col-3 lg:grid-cols-4 gap-10 py-16 px-10 sm:px-16">
           {/* Column 1: Social Media */}
           <div className="social-media flex flex-col gap-5">
             <Image src="/logo.png" alt="pic" width={200} height={200} />
@@ -138,17 +138,12 @@ const Footer = () => {
                 <span className="text-sm cursor-default whitespace-nowrap">info@clearteksystems.com</span>
               </p>
               <Separator className="w-[120%] bg-black/20 ml-auto mt-2" />
-              <p className="flex gap-2 items-center cursor-pointer">
-                <Image src="/location.png" alt="location" width={10} height={10} />
-                <span className="text-sm cursor-default whitespace-nowrap line-clamp-2">5001 State Highway 23, Suite 3 #112, Oneonta, NY 13820</span>
-              </p>
-              <Separator className="w-[120%] bg-black/20 ml-auto mt-2" />
             </div>
           </div>
         </div>
       </section>
 
-          <p className="w-full  sm:text-center py-4 text-sm sm:text-1xl"><span className="font-extralight">Copyright &copy;2025 by</span> <strong>ClearTek Systems</strong></p>
+          <p className="w-full px-3 sm:px-0 sm:text-center py-4 text-sm sm:text-1xl"><span className="font-extralight">Copyright &copy;2025 by</span> <strong>ClearTek Systems</strong></p>
         </footer>
   )
 }
