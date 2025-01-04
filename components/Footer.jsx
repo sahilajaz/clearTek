@@ -9,7 +9,7 @@ import { Separator } from "@/components/ui/separator"
 
 const Footer = () => {
   return (
-    <footer className="mt-16">
+    <footer className="w-full mt-16">
       <section className="form-section">
         <div className='bg-[url("/formimg.png")] w-full h-[610px]'>
           <div className="w-full h-full flex flex-col sm:pl-[100px] md:pl-[400px]  lg:pl-[600px] pt-32 sm:pt-52 md:pt-20 lg:pt-32  gap-10">
@@ -125,7 +125,7 @@ const Footer = () => {
           </div>
 
           {/* Column 4: Contact Us */}
-          <div className="w-1/2 sm:w-full flex flex-col items-center">
+          <div className="w-full flex flex-col items-center">
             <h1 className="text-3xl sm:mr-36">Contact Us</h1>
             <div className="mt-10 w-full flex mx-10 sm:mx-0 flex-col gap-y-4">
               <p className="flex gap-2 items-center cursor-pointer">

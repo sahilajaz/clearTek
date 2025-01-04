@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${raleway.variable}  antialiased  w-full`}
+        className={`${raleway.variable}  antialiased  w-screen`}
       >
         <Navbar/>
         {children}

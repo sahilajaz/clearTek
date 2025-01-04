@@ -3,18 +3,23 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply scroll-smooth;
-  }
+  /* globals.css */
+    * {
+      @apply scroll-smooth;
+    }
 
-  body {
-    @apply  min-h-screen;
-  }
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+    }
 }
 
 @layer utilities {
   .navbar {
-    @apply  w-[493px] sm:w-full  h-[90px] border-[#0060de] border-b-4  border-t border-l-0 border-r-0
+    @apply  w-full  h-[90px] border-[#0060de] border-b-4  border-t border-l-0 border-r-0
   }
 
   .mobileNav {
