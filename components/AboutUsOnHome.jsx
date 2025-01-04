@@ -4,7 +4,7 @@ import React from 'react'
 
 const AboutUsOnHome = () => {
   return (
-    <section className='w-[500px] sm:w-full mt-16'>
+    <section className='w-[400px] sm:w-full mt-16'>
         <div className='bg-[url("/bgyellow.webp")] py-4 mx-10'>
             <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center'>
                 <div>

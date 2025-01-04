@@ -11,7 +11,6 @@ export default function Home() {
           alt="hero-image"
           layout="fill"
           objectFit="cover"
-          className="w-full h-full"
         />
       </div>
       <OurServiceSection />
