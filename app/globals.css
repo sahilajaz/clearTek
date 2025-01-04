@@ -14,7 +14,7 @@
 
 @layer utilities {
   .navbar {
-    @apply  w-[500px] sm:w-full  h-[90px] border-[#0060de] border-b-4  border-t border-l-0 border-r-0
+    @apply  w-[411px] sm:w-full  h-[90px] border-[#0060de] border-b-4  border-t border-l-0 border-r-0
   }
 
   .mobileNav {
