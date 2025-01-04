@@ -3,7 +3,6 @@
 import React from 'react'
 import {
     Sheet,
-    SheetClose,
     SheetContent,
     SheetTitle,
     SheetTrigger,
