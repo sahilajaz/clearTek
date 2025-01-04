@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const ServiceCard = () => {
   return (
-    <div className='grid grid-cols-1  sm:grid-cols-2  xl:grid-cols-4 gap-10 sm:gap-60 md:gap-20 mt-10 ml-1 sm:ml-0 '>
+    <div className='grid grid-cols-1  sm:grid-cols-2  xl:grid-cols-4 gap-10 sm:gap-60 md:gap-6 mt-10 ml-1 sm:ml-0 '>
       {
         ServicecardsArr.map((item) => (
           <div 
