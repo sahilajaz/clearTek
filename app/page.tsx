@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="w-full h-full">
-      <div className="relative w-[411px] sm:w-full h-[800px]">
+    <section className="sm:w-full h-full">
+      <div className="relative w-[498px] sm:w-full h-[800px]">
         <Image
           src="/heroimage.jpg"
           alt="hero-image"
