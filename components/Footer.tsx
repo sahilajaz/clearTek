@@ -5,7 +5,7 @@ import { Button } from "./ui/button"
 import { Separator } from "@/components/ui/separator"
 
 interface FooterProps {
-  showContactUs?: Boolean
+  showContactUs?: boolean
 }
 const Footer : FC<FooterProps> = ({ showContactUs = true }) => {
   return (
