@@ -9,9 +9,9 @@ interface FooterProps {
 }
 const Footer : FC<FooterProps> = ({ showContactUs = true }) => {
   return (
-    <footer className=" mt-16"> 
-    {
-      showContactUs &&
+    <>
+    { showContactUs && (<footer className=" mt-16"> 
+    
       <section className="form-section md:w-[1200px] mx-auto">
         <div className='bg-[url("/formimg.png")] w-80 md:w-[1200px] mx-auto h-[610px] '>
           <div className="w-full h-full flex flex-col sm:pl-[100px] lg:pl-[600px] pt-20 sm:pt-28 md:pt-20 lg:pt-32  gap-10">
@@ -32,7 +32,7 @@ const Footer : FC<FooterProps> = ({ showContactUs = true }) => {
           </div>
         </div>
       </section>
-      }
+      
             <section className="w-full mt-10 border-t-2 border-b-2">
         <div className="w-[400px] md:w-[1200px] mx-auto grid grid-col-1 sm:grid-col-2 md:grid-col-3 lg:grid-cols-4 gap-10 py-16 px-10 sm:px-0 items-center">
           {/* Column 1: Social Media */}
@@ -115,7 +115,9 @@ const Footer : FC<FooterProps> = ({ showContactUs = true }) => {
       </section>
 
           <p className="md:w-[1200px] w-[400px] mx-auto sm:text-center py-4 text-sm sm:text-xl px-6 sm:px-0"><span className="font-extralight text-white">Copyright &copy;2025 by</span> <strong className="text-white">ClearTek Systems</strong></p>
-        </footer>
+        </footer> 
+   ) }
+   </>
   )
 }
 

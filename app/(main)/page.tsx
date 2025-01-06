@@ -12,7 +12,7 @@ export default function Index() {
   };
 
   return (
-    <section className="w-52 mx-20 lg:w-full h-full bg-black flex  pt-32">
+    <section className="w-52 mx-20 lg:w-full h-full bg-black flex  pt-60">
       <div className="w-full flex flex-col justify-center items-center gap-5 shadow-xl">
         <h1 className="text-white text-4xl">Login</h1>
         <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
