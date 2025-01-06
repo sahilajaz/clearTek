@@ -54,15 +54,15 @@ const Footer = () => {
               <div className="mt-5 flex flex-col gap-3">
                 <p className="flex gap-4 sm:gap-2 items-center cursor-pointer">
                   <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400 text-white">Custom Software Development</span>
+                  <span className="text-sm hover:text-blue-400 text-white leading-6">Custom Software Development</span>
                 </p>
                 <p className="flex gap-2 items-center cursor-pointer">
                   <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400 text-white">Data Migrations & Cloud Solutions</span>
+                  <span className="text-sm hover:text-blue-400 text-white leading-6">Data Migrations & Cloud Solutions</span>
                 </p>
                 <p className="flex gap-2 items-center cursor-pointer">
                   <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400 text-wrap sm:whitespace-nowrap text-white">
+                  <span className="text-sm hover:text-blue-400 text-wrap sm:whitespace-nowrap text-white leading-6">
                   ETL Pipelines Design & Implementation
                   </span>
                 </p>
@@ -71,17 +71,17 @@ const Footer = () => {
               <div className="mt-5 flex flex-col gap-3">
               <p className="flex gap-2 items-center cursor-pointer">
                   <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400 text-white">Microservices Architecture</span>
+                  <span className="text-sm hover:text-blue-400 text-white leading-6">Microservices Architecture</span>
                 </p>
                 <p className="flex gap-2 items-center cursor-pointer">
                   <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400 text-wrap sm:whitespace-nowrap text-white">
+                  <span className="text-sm hover:text-blue-400 text-wrap sm:whitespace-nowrap text-white leading-6">
                   DevOps Consulting
                   </span>
                 </p>
                 <p className="flex gap-2 items-center cursor-pointer">
                   <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400 text-wrap sm:whitespace-nowrap text-white">
+                  <span className="text-sm hover:text-blue-400 text-wrap sm:whitespace-nowrap text-white leading-6">
                   Dashboard Development
                   </span>
                 </p>
@@ -108,7 +108,7 @@ const Footer = () => {
         </div>
       </section>
 
-          <p className="w-full px-3 sm:px-0 sm:text-center py-4 text-sm sm:text-1xl"><span className="font-extralight text-white">Copyright &copy;2025 by</span> <strong className="text-white">ClearTek Systems</strong></p>
+          <p className="md:w-[1200px] w-[400px] mx-auto sm:text-center py-4 text-sm sm:text-xl px-6 sm:px-0"><span className="font-extralight text-white">Copyright &copy;2025 by</span> <strong className="text-white">ClearTek Systems</strong></p>
         </footer>
   )
 }

@@ -26,8 +26,8 @@ const ServiceCard = () => {
             }
           )}
         >
-            <h2 className='text-white text-justify'>{item.title}</h2>
-            <p className='text-white py-6  text-sm font-bold'>{item.para}</p>
+            <h2 className='text-white '>{item.title}</h2>
+            <p className='text-white py-6 text-sm font-bold'>{item.para}</p>
             <Link href={item.path} className='flex justify-center items-center gap-1 text-wrap' target='_blank'><Image src='/arrow.png' alt='arrow' width={16} height={16}/>
               <span className='text-white font-bold text-sm text-wrap'>Read More</span>
             </Link>
