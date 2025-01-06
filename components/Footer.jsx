@@ -1,17 +1,14 @@
 "use client"
 import Image from "next/image"
 import { Button } from "./ui/button"
-import { FaInstagram } from "react-icons/fa";
-import { RiLinkedinLine } from "react-icons/ri";
-import { FiFacebook } from "react-icons/fi";
 import { Separator } from "@/components/ui/separator"
 
 
 const Footer = () => {
   return (
-    <footer className="w-full mt-16">
-      <section className="form-section md:mx-10  lg:mx-28 2xl:mx-[900px]">
-        <div className='bg-[url("/formimg.png")] w-[700px] lg:min-w-[100%]  h-[610px]'>
+    <footer className=" mt-16">
+      <section className="form-section md:w-[1200px] mx-auto">
+        <div className='bg-[url("/formimg.png")] w-[400px] md:w-[1200px] mx-auto h-[610px]'>
           <div className="w-full h-full flex flex-col sm:pl-[100px] lg:pl-[600px] pt-20 sm:pt-28 md:pt-20 lg:pt-32  gap-10">
             <h1 className="text-white font-semibold text-sm lg:text-4xl mx-5 md:mx-2 lg:mx-5">
               Get In Touch With Us!
@@ -31,11 +28,11 @@ const Footer = () => {
         </div>
       </section>
             <section className="w-full mt-10 border-t-2 border-b-2">
-        <div className="grid grid-col-1 sm:grid-col-2 md:grid-col-3 lg:grid-cols-4 gap-10 py-16 px-10 sm:px-16">
+        <div className="w-[400px] md:w-[1200px] mx-auto grid grid-col-1 sm:grid-col-2 md:grid-col-3 lg:grid-cols-4 gap-10 py-16 px-10 sm:px-0 items-center">
           {/* Column 1: Social Media */}
-          <div className="social-media flex flex-col gap-5">
+          <div className="social-media">
             <Image src="/logo.png" alt="pic" width={200} height={200} />
-            <p className="text-3xl font-thin">Follow us</p>
+            {/* <p className="text-3xl font-thin">Follow us</p>
             <div className="flex gap-2">
               <div className="w-7 h-7 bg-blue-500 rounded-full flex items-center justify-center">
                 <FaInstagram className="text-white w-4 h-4" />
@@ -46,78 +43,46 @@ const Footer = () => {
               <div className="w-7 h-7 bg-blue-500 rounded-full flex items-center justify-center">
                 <RiLinkedinLine className="text-white w-4 h-4" />
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Column 2 and 3: Explore Section */}
           <div className="col-span-2">
-            <h1 className=" text-3xl font-thin">Explore</h1>
+            <h1 className="text-white text-3xl font-thin">Explore</h1>
             <div className="w-1/2 sm:w-full grid grid-col-1 sm:grid-cols-2 gap-10 mt-6">
               {/* Column 2 Left */}
               <div className="mt-5 flex flex-col gap-3">
                 <p className="flex gap-4 sm:gap-2 items-center cursor-pointer">
                   <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400">Home</span>
+                  <span className="text-sm hover:text-blue-400 text-white">Custom Software Development</span>
                 </p>
                 <p className="flex gap-2 items-center cursor-pointer">
                   <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400">Services</span>
+                  <span className="text-sm hover:text-blue-400 text-white">Data Migrations & Cloud Solutions</span>
                 </p>
                 <p className="flex gap-2 items-center cursor-pointer">
                   <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400 text-wrap sm:whitespace-nowrap">
-                    Municipal Technologies
-                  </span>
-                </p>
-                <p className="flex gap-2 items-center cursor-pointer">
-                  <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400">VOIP Solutions</span>
-                </p>
-                <p className="flex gap-2 items-center cursor-pointer">
-                  <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400 text-wrap sm:whitespace-nowrap">
-                    Router & Firewall Installations
-                  </span>
-                </p>
-                <p className="flex gap-2 items-center cursor-pointer">
-                  <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400 text-wrap sm:whitespace-nowrap">
-                    Server Maintenance & Monitoring
+                  <span className="text-sm hover:text-blue-400 text-wrap sm:whitespace-nowrap text-white">
+                  ETL Pipelines Design & Implementation
                   </span>
                 </p>
               </div>
               {/* Column 3 Right */}
               <div className="mt-5 flex flex-col gap-3">
-                <p className="flex gap-2 items-center cursor-pointer">
+              <p className="flex gap-2 items-center cursor-pointer">
                   <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400">About Us</span>
+                  <span className="text-sm hover:text-blue-400 text-white">Microservices Architecture</span>
                 </p>
                 <p className="flex gap-2 items-center cursor-pointer">
                   <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400">Cloud Hosting</span>
-                </p>
-                <p className="flex gap-2 items-center cursor-pointer">
-                  <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400 text-wrap sm:whitespace-nowrap">
-                    Cloud Video Surveillance
+                  <span className="text-sm hover:text-blue-400 text-wrap sm:whitespace-nowrap text-white">
+                  DevOps Consulting
                   </span>
                 </p>
                 <p className="flex gap-2 items-center cursor-pointer">
                   <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400 whitespace-nowrap">
-                    Network Design & Cabling
-                  </span>
-                </p>
-                <p className="flex gap-2 items-center cursor-pointer">
-                  <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400 whitespace-nowrap">
-                    Desktop Maintenance
-                  </span>
-                </p>
-                <p className="flex gap-2 items-center cursor-pointer">
-                  <Image src="/right.png" alt="right" width={7} height={7} />
-                  <span className="text-sm hover:text-blue-400 whitespace-nowrap">
-                    Data Center Management
+                  <span className="text-sm hover:text-blue-400 text-wrap sm:whitespace-nowrap text-white">
+                  Dashboard Development
                   </span>
                 </p>
               </div>
@@ -125,25 +90,25 @@ const Footer = () => {
           </div>
 
           {/* Column 4: Contact Us */}
-          <div className="w-full flex flex-col items-center">
-            <h1 className="text-3xl sm:mr-36">Contact Us</h1>
-            <div className="mt-10 w-full flex mx-10 sm:mx-0 flex-col gap-y-4">
+          <div className="w-full flex flex-col">
+            <h1 className="text-3xl text-white">Contact Us</h1>
+            <div className="mt-10 w-full flex  sm:mx-0 flex-col gap-y-4">
               <p className="flex gap-2 items-center cursor-pointer">
                 <Image src="/phone.png" alt="phone" width={10} height={10} />
-                <span className="text-sm cursor-default">(123) 456-7890</span>
+                <span className="text-sm cursor-default text-white">(123) 456-7890</span>
               </p>
-              <Separator className="w-[120%] bg-black/20 ml-auto mt-2" />
+              <Separator className="w-[120%] bg-white  mt-2" />
               <p className="flex gap-2 items-center cursor-pointer">
                 <Image src="/email.png" alt="email" width={10} height={10} />
-                <span className="text-sm cursor-default whitespace-nowrap">info@clearteksystems.com</span>
+                <span className="text-sm cursor-default whitespace-nowrap text-white">info@clearteksystems.com</span>
               </p>
-              <Separator className="w-[120%] bg-black/20 ml-auto mt-2" />
+              <Separator className="w-[120%] bg-white ml-auto mt-2" />
             </div>
           </div>
         </div>
       </section>
 
-          <p className="w-full px-3 sm:px-0 sm:text-center py-4 text-sm sm:text-1xl"><span className="font-extralight">Copyright &copy;2025 by</span> <strong>ClearTek Systems</strong></p>
+          <p className="w-full px-3 sm:px-0 sm:text-center py-4 text-sm sm:text-1xl"><span className="font-extralight text-white">Copyright &copy;2025 by</span> <strong className="text-white">ClearTek Systems</strong></p>
         </footer>
   )
 }

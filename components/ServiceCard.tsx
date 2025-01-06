@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const ServiceCard = () => {
   return (
-    <div className='grid grid-cols-1  sm:grid-cols-2  xl:grid-cols-4 gap-9 sm:gap-60 md:gap-6 mt-10 ml-1 sm:ml-0 '>
+    <div className='grid grid-cols-1  sm:grid-cols-2  xl:grid-cols-3 gap-9 sm:gap-60 md:gap-6 mt-10 ml-1 sm:ml-0 mx-auto '>
       {
         ServicecardsArr.map((item) => (
           <div 
@@ -26,7 +26,6 @@ const ServiceCard = () => {
             }
           )}
         >
-            <Image src={item.pic} alt='div-pic' width={100} height={100} className='mb-4'/>
             <h2 className='text-white text-justify'>{item.title}</h2>
             <p className='text-white py-6  text-sm font-bold'>{item.para}</p>
             <Link href={item.path} className='flex justify-center items-center gap-1 text-wrap' target='_blank'><Image src='/arrow.png' alt='arrow' width={16} height={16}/>
