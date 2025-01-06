@@ -16,9 +16,7 @@ export const metadata: Metadata = {
 
 export const viewport = "width=device-width, initial-scale=1.0";
 
-interface FooterProps {
-  showContactUs?: Boolean
-}
+
 
 export default function RootLayout({ 
   showContactUs = false,
