@@ -7,13 +7,13 @@ import Link from 'next/link'
 
 const ServiceCard = () => {
   return (
-    <div className='grid grid-cols-1  sm:grid-cols-2  xl:grid-cols-3 gap-9 sm:gap-60 md:gap-6 mt-10 ml-1 sm:ml-0 mx-auto '>
+    <div className='grid grid-cols-1  sm:grid-cols-2  xl:grid-cols-3 gap-9 sm:gap-60 md:gap-6 mt-10'>
       {
         ServicecardsArr.map((item) => (
           <div 
           key={item.id} 
           className={cn(
-            'flex flex-1 flex-col justify-center items-center py-5 gap-1 px-5 border border-gray-300 rounded-2xl shadow-2xl w-[210px] md:w-[330px] cursor-pointer  transform transition-all duration-300 hover:scale-105', 
+            'flex px-2 flex-1 flex-col mr-20 ml-[-40px] sm:mr-0 sm:ml-0 py-5 gap-1  border border-gray-300 rounded-2xl shadow-2xl w-[300px] md:w-[330px]  cursor-pointer  transform transition-all duration-300 hover:scale-105', 
             {
               'card1': item.id === 1, 
               'card2': item.id === 2,
@@ -26,10 +26,10 @@ const ServiceCard = () => {
             }
           )}
         >
-            <h2 className='text-white '>{item.title}</h2>
-            <p className='text-white py-6 text-sm font-bold'>{item.para}</p>
+            <h2 className='text-white font-bold'>{item.title}</h2>
+            <p className='text-white px-1 py-6 text-sm font-light'>{item.para}</p>
             <Link href={item.path} className='flex justify-center items-center gap-1 text-wrap' target='_blank'><Image src='/arrow.png' alt='arrow' width={16} height={16}/>
-              <span className='text-white font-bold text-sm text-wrap'>Read More</span>
+              <span className='text-white font-bold text-sm text-wrap font-light'>Read More</span>
             </Link>
           </div>
         ))

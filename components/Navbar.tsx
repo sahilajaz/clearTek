@@ -6,22 +6,21 @@ import MobileNavbar from "@/components/MobileNavbar";
 const Navbar = () => {
   return (
     <header className="navbar">
-      <div className="w-[1200px] mx-auto flex justify-between items-center">
+      <div className=" flex justify-between items-center bg-white px-10 py-1 rounded-3xl">
         <Image src="/logo.png" alt="logo" width={100} height={100} />
         <nav>
-          {/* Desktop Navbar */}
           <ul className="hidden sm:flex w-full gap-5 justify-end">
             {navItems.map((item) => (
               <Link
                 key={item.id}
                 href={item.path}
-                className="text-white text-[18px] hover:text-gray-700 lg:pl-0 sm:pl-4"
+                className="text-black text-[18px] hover:text-blue-700 lg:pl-0 sm:pl-4"
               >
                 {item.name}
               </Link>
             ))}
           </ul>
-          {/* Mobile Navbar */}
+         
           <div className="mobile block sm:hidden">
             <MobileNavbar />
           </div>

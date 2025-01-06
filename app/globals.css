@@ -20,7 +20,7 @@
 
 @layer utilities {
   .navbar {
-    @apply w-full h-[90px] border-b shadow-2xl flex items-center fixed top-0 left-0  z-30 bg-black;
+    @apply  lg:w-[1200px] mx-auto absolute left-0 right-0 z-50 mt-5;
   }
   
 
