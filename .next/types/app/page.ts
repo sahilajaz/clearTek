@@ -1,8 +1,8 @@
 // File: D:\clear_teak\clearteak\app\page.tsx
-import * as entry from '../../../app/page.js'
+import * as entry from '../../../app/(main)/page.jsx'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../app/page.js')
+type TEntry = typeof import('../../../app/(main)/page.jsx')
 
 type SegmentParams<T extends Object = any> = T extends Record<string, any>
   ? { [K in keyof T]: T[K] extends string ? string | string[] | undefined : never }

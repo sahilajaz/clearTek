@@ -1,15 +1,12 @@
 import type { Metadata } from "next";
 import {Raleway} from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from '@/components/Footer'
+
 
 const raleway = Raleway({
     subsets: ['latin'],
     variable: '--raleway-font'
 })
-
-
 
 export const metadata: Metadata = {
   title: "ClearTek Systems",
@@ -18,19 +15,19 @@ export const metadata: Metadata = {
 
 export const viewport = "width=device-width, initial-scale=1.0";
 
-export default function RootLayout({
+export default function RootLayout({ 
+  showContactUs = false,
   children,
 }: Readonly<{
   children: React.ReactNode;
+  showContactUs: boolean
 }>) {
   return (
     <html lang="en">
       <body
         className={`${raleway.variable}  antialiased  w-screen`}
       >
-        <Navbar/>
         {children}
-        <Footer/>
       </body>
     </html>
   );

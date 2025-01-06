@@ -1,9 +1,9 @@
 {
   "app": {
-    "[project]/app/page": [
+    "[project]/app/(main)/page": [
       "static/media/1Ptug8zYS_SKggPNyC0IT4ttDfA-s.p.aacc4992.woff2"
     ],
-    "[project]/app/pages/about/page": [
+    "[project]/app/pages/(secured)/home/page": [
       "static/media/1Ptug8zYS_SKggPNyC0IT4ttDfA-s.p.aacc4992.woff2"
     ]
   },
