@@ -7,7 +7,7 @@ const About = () => {
             <section className='w-full py-5 mb-7'>
                 <div className='md:w-[1200px] mx-auto'>
                 <h1 className='text-white text-xl sm:text-5xl py-5 ml-10'>Welcome to ClearTek</h1>
-                <p className='text-white  leading-9 sm:text-justify ml-1 px-10'>where innovation meets excellence in software development. We are a team of passionate professionals dedicated to helping small technology businesses thrive in today's digital landscape.</p>
+                <p className='text-white  leading-9 sm:text-justify ml-1 px-10'>where innovation meets excellence in software development. We are a team of passionate professionals dedicated to helping small technology businesses thrive in today&apos;s digital landscape.</p>
                 </div>
             </section>
             <div className=' md:w-[1200px] mx-auto py-4'>
@@ -32,7 +32,7 @@ const About = () => {
             <div className='w-full '>
               <div className='md:w-[1200px] mx-auto py-3'>
                 <h1 className='text-white text-xl sm:text-5xl py-5 ml-10'>Ready To Partner With Us?</h1>
-                <p className='text-white text-xl leading-10 sm:text-justify ml-1  px-10'>Whether you're a startup looking to build a groundbreaking application or an established business in need of digital transformation, we're here to help. Contact us today to learn more about how we can help your business succeed.</p>
+                <p className='text-white text-xl leading-10 sm:text-justify ml-1  px-10'>Whether you&apos;re a startup looking to build a groundbreaking application or an established business in need of digital transformation, we're here to help. Contact us today to learn more about how we can help your business succeed.</p>
               </div>
             </div>
         </section>

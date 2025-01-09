@@ -11,7 +11,7 @@ const AboutUsOnHome = () => {
                 <section>
                     <h1 className='px-14 text-white text-xl sm:text-4xl font-extralight mb-4 text-wrap'>About Us</h1>
                     <p className='text-white mx-3 mr-8 px-10 leading-8 sm:text-justify text-sm'>Welcome to ClearTek, where innovation meets excellence in software development. 
-                        We are a team of passionate professionals dedicated to helping small technology businesses thrive in today's digital 
+                        We are a team of passionate professionals dedicated to helping small technology businesses thrive in today&apos;s digital 
                         landscape. </p>
                 </section>
                 <section className='mt-7'>
