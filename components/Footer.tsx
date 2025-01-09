@@ -1,13 +1,69 @@
 "use client"
-import { FC } from "react"
+import { FC, useState } from "react"
 import Image from "next/image"
 import { Button } from "./ui/button"
 import { Separator } from "@/components/ui/separator"
+import { useToast } from "@/hooks/use-toast"
+import emailjs from '@emailjs/browser'
 
 interface FooterProps {
   showContactUs?: boolean
 }
 const Footer : FC<FooterProps> = ({ showContactUs = true }) => {
+      const [loading, setLoading] = useState(false)
+      const { toast } = useToast()
+      const [form , setForm] = useState({
+        firstName : '',
+        lastName: '',
+        email: '',
+        phoneNumber: '',
+        message: ''
+      })
+
+      const handleSubmit = async (e : React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+        if (!form.firstName || !form.lastName || !form.email || !form.phoneNumber || !form.message) {
+          toast({
+            title: 'Details missing',
+            description: 'Please fill all the details',
+            className: 'bg-black text-white mb-16'
+          })
+          return
+        }
+        try {
+          setLoading(true)
+            await emailjs.send(process.env.NEXT_PUBLIC_SERVICE_ID as string , process.env.NEXT_PUBLIC_TEMPLATE_ID as string, {
+              from_name: `${form.firstName} ${form.lastName}`,
+              to_name: 'clearTek Systems', 
+              to_email: 'sahil_2022bece049@nitsir.ac.in',
+              message: form.message,
+              from_email: form.email,
+            } ,process.env.NEXT_PUBLIC_PUBLICK_KEY as string)
+      
+            setLoading(false)
+            toast({
+              title: 'Message sent successfully',
+              description: 'Message have beeen sent successfully',
+              className: 'bg-lime-500 text-white mb-16'
+            })
+            setForm({
+              firstName : '',
+              lastName: '',
+              email: '',
+              phoneNumber: '',
+              message: ''
+          })
+        } catch (error) {
+          setLoading(false)
+          console.log(error)
+          toast({
+            title: 'Something Went Wrong',
+            description: 'Please try again later',
+            className: 'bg-red-500 text-white mb-16'
+          })
+        } 
+      }
+
   return (
     <>
     { showContactUs && (<footer className=" mt-16"> 
@@ -18,16 +74,28 @@ const Footer : FC<FooterProps> = ({ showContactUs = true }) => {
             <h1 className="text-white font-semibold text-sm lg:text-4xl mx-5 md:mx-2 lg:mx-5">
               Get In Touch With Us!
             </h1>
-             <form className="grid grid-cols-2 gap-9 md:gap-6 lg:gap-8 w-[250px] sm:w-full px-4 lg:px-5">
-              <input className="inputFiled md:w-full lg:w-full py-3 px-1" placeholder="First Name"/>
-              <input className="inputFiled w-full py-3 px-1" placeholder="Last Name"/>
-              <input className="inputFiled w-full py-3 px-1" placeholder="Your Email"/>
-              <input className="inputFiled w-full py-3 px-1" placeholder="Your Phone Number"/>
+             <form className="grid grid-cols-2 gap-9 md:gap-6 lg:gap-8 w-[250px] sm:w-full px-4 lg:px-5" onSubmit={handleSubmit}>
+              <input className="inputFiled md:w-full lg:w-full py-3 px-1" placeholder="First Name" value={form.firstName}
+              onChange={(e) => setForm({...form , firstName: e.target.value})}
+              />
+              <input className="inputFiled w-full py-3 px-1" placeholder="Last Name" value={form.lastName}
+                onChange={(e) => setForm({...form , lastName : e.target.value})}
+              />
+              <input type="email"  required className="inputFiled w-full py-3 px-1" placeholder="Your Email" value={form.email}
+                onChange={(e) => setForm({...form , email : e.target.value})}
+              />
+              <input className="inputFiled w-full py-3 px-1" placeholder="Your Phone Number" value={form.phoneNumber}
+                onChange={(e) => setForm({...form , phoneNumber: e.target.value})}
+              />
               <textarea
                 className="inputFiled w-full py-3 px-1 col-span-2"
                 placeholder="Your Message"
+                value={form.message}
+                onChange={(e) => setForm({...form , message: e.target.value})}
               />
-              <Button type="submit" className="w-ful sm:w-1/3 bg-[#0d3e82] px-[20px] py-[10px] rounded-sm sm:px-[9px] sm:py-[17px] sm:rounded-xl">Send</Button>
+              <button type="submit" className="w-ful sm:w-1/2 bg-[#0d3e82] px-[16px] py-[10px] rounded-sm  sm:py-[8px] sm:rounded-xl">
+              {loading ? 'Sending...' : 'Send'}
+              </button>
              </form>
           </div>
         </div>
@@ -37,19 +105,7 @@ const Footer : FC<FooterProps> = ({ showContactUs = true }) => {
         <div className="w-[400px] md:w-[1200px] mx-auto grid grid-col-1 sm:grid-col-2 md:grid-col-3 lg:grid-cols-4 gap-10 py-16 px-10 sm:px-0 items-center">
           {/* Column 1: Social Media */}
           <div className="social-media">
-            <Image src="/logo.png" alt="pic" width={200} height={200} />
-            {/* <p className="text-3xl font-thin">Follow us</p>
-            <div className="flex gap-2">
-              <div className="w-7 h-7 bg-blue-500 rounded-full flex items-center justify-center">
-                <FaInstagram className="text-white w-4 h-4" />
-              </div>
-              <div className="w-7 h-7 bg-blue-500 rounded-full flex items-center justify-center">
-                <FiFacebook className="text-white w-4 h-4" />
-              </div>
-              <div className="w-7 h-7 bg-blue-500 rounded-full flex items-center justify-center">
-                <RiLinkedinLine className="text-white w-4 h-4" />
-              </div>
-            </div> */}
+            <Image src="/logo1.png" alt="pic" width={190} height={190} className="rounded-xl"/>
           </div>
 
           {/* Column 2 and 3: Explore Section */}

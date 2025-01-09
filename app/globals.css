@@ -4,12 +4,17 @@
 
 @layer base {
   /* globals.css */
+      :root {
+        --roboto-font: 'Roboto', sans-serif;
+      }
+
     * {
       @apply scroll-smooth;
     }
 
     html,
     body {
+      font-family: var(--roboto-font);
       margin: 0;
       padding: 0;
       width: 100%;

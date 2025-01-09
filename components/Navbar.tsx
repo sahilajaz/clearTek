@@ -7,7 +7,9 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className=" flex justify-between items-center bg-white px-10 py-1 rounded-3xl">
-        <Image src="/logo.png" alt="logo" width={100} height={100} />
+        <div className="w-20 sm:w-96">
+        <Image src="/footerlogo.jpg" alt="logo" width={140} height={140} className="rounded-xl py-1"/>
+        </div>
         <nav>
           <ul className="hidden sm:flex w-full gap-5 justify-end">
             {navItems.map((item) => (
