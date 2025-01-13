@@ -11,6 +11,14 @@
     "[project]/app/pages/(secured)/about/page": [
       "static/media/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabVmUiAr0klQmz24-s.p.66cb79b4.woff2",
       "static/media/1Ptug8zYS_SKggPNyC0IT4ttDfA-s.p.aacc4992.woff2"
+    ],
+    "[project]/app/pages/(secured)/services/page": [
+      "static/media/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabVmUiAr0klQmz24-s.p.66cb79b4.woff2",
+      "static/media/1Ptug8zYS_SKggPNyC0IT4ttDfA-s.p.aacc4992.woff2"
+    ],
+    "[project]/app/pages/(secured)/contact/page": [
+      "static/media/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabVmUiAr0klQmz24-s.p.66cb79b4.woff2",
+      "static/media/1Ptug8zYS_SKggPNyC0IT4ttDfA-s.p.aacc4992.woff2"
     ]
   },
   "appUsingSizeAdjust": true,

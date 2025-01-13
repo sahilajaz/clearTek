@@ -13,18 +13,7 @@ const ServiceCard = () => {
           <div 
           key={item.id} 
           className={cn(
-            'flex px-2 flex-1 flex-col mr-20 ml-[-40px] sm:mr-0 sm:ml-0 py-5 gap-1  border border-gray-300 rounded-2xl shadow-2xl w-[300px] md:w-[330px]  cursor-pointer  transform transition-all duration-300 hover:scale-105', 
-            {
-              'card1': item.id === 1, 
-              'card2': item.id === 2,
-              'card3': item.id ===3,
-              'card4': item.id ===4,
-              'card5': item.id ===5,
-              'card6': item.id === 6,
-              'card7': item.id === 7,
-              'card8': item.id === 8
-            }
-          )}
+            'flex px-2 flex-1 flex-col mr-20 ml-[-40px] sm:mr-0 sm:ml-0 py-5 gap-1  border border-gray-300 rounded-2xl shadow-2xl w-[300px] md:w-[330px]  cursor-pointer  transform transition-all duration-300 hover:scale-105 card')}
         >
             <h2 className='text-white font-bold text-xl capitalize'>{item.title}</h2>
             <p className='text-white px-1 py-6 text-sm font-light'>{item.para}</p>

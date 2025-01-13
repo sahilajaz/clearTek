@@ -25,7 +25,7 @@ const About = () => {
                     </section>
                     </div>
                     <div className='image-div'>
-                        <Image src="/abouthome.png" alt="home-img" width={900} height={900}/>
+                        <Image src="/aboutonhome.jpeg" alt="home-img" width={900} height={900}/>
                     </div>
                 </div>
             </div>

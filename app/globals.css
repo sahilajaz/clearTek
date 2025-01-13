@@ -37,15 +37,12 @@
      @apply text-[0.8rem] sm:text-xl md:text-3xl z-20 top-16 sm:top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center
   }
 
-  .card1 {
-    @apply bg-gradient-to-b from-[#FF87B5] to-[#F45887]
+  .card {
+    background: linear-gradient(45deg, #ff0000 0%, #000000 80%, #000000 60%);
   }
-
-  .card2 {
-    @apply bg-gradient-to-b from-[#c941d9] to-[#ed4cb2]
-
-  }
-  .card3 {
+  
+  
+  /* .card3 {
     @apply bg-gradient-to-b from-[#686fe3] to-[#373afb];
   }
   .card4 {
@@ -64,7 +61,7 @@
   }
   .card8 {
     @apply bg-gradient-to-b from-[#ae9cff] to-[#8f78fc];
-  }
+  } */
      
   .inputFiled {
     @apply text-white border-b border-white border-t-0 bg-transparent outline-none placeholder-white
